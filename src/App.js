@@ -8,6 +8,7 @@ import './App.css';
 // import Child1 from './Components/Child1';
 
 // import Ref from './Components/Ref';
+import TodoApp from './Components/TodoApp';
 
 import TrafficLight from './Components/TrafficLight';
 function App() {
@@ -21,7 +22,7 @@ function App() {
     
 
 
-    <TrafficLight></TrafficLight>
+   <TodoApp></TodoApp>
   
   
     
