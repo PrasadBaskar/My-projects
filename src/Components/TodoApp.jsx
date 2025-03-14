@@ -29,7 +29,7 @@ const TodoApp = () => {
           className="todo-input"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
-         
+         placeholder='Add a new task'
         />
         <button className="add-button" onClick={addTodo}>Add Todo</button>
       </div>

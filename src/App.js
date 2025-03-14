@@ -8,10 +8,10 @@ import './App.css';
 // import Child1 from './Components/Child1';
 
 // import Ref from './Components/Ref';
-// import TodoApp from './Components/TodoApp';
+ import TodoApp from './Components/TodoApp';
 
 // import TrafficLight from './Components/TrafficLight';
-//  import {BrowserRouter as Router, Routes, Route, Form} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Form} from 'react-router-dom';
 //  import Home from './Components/Home';
 // import Contact from './Components/Contact';
 // import About from './Components/About';
@@ -20,7 +20,12 @@ import './App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import Nav from 'react-bootstrap/Nav';
 // import Main from './BBC/Main';
-import Form from './Components/Form';
+// import Form from './Components/Form';
+// import MovieSearch from './Components/MovieSearch';
+import Login from './Components/Login';
+import Register from './Components/Register';
+import Dashboard from './Components/Dashboard';
+import TrafficLight from './Components/TrafficLight';
 function App() {
 
 //   useEffect(()=> {alert("this is loading");
@@ -28,7 +33,7 @@ function App() {
 //   })
  
   return (
-   <div>
+   <div className="App">
    {/* <Router>
     <Nav className="bg-dark text-white">
     <Nav.Item>
@@ -49,7 +54,15 @@ function App() {
     </Routes>
   </Router>
      */}
-    <Form></Form>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Login/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+      </Routes>
+    </Router>
+    
    </div>
   );
 }
